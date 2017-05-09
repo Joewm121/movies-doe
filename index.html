@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="img" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>MOVIES</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="movie-options">
+          <h3>Pick a movie to watch!</h3>
+          <p>Movies:</p>
+          <select class="form-control movie-list">
+            <option value="movie-1">Movie#1</option>
+            <option value="movie-2">Movie#2</option>
+            <option value="movie-3">Movie#3</option>
+            <option value="movie-4">Movie#4</option>
+            <option value="movie-5">Movie#5</option>
+            <option value="movie-6">Movie#6</option>
+          </select>
+          <p>
+            Ticket Type:
+          </p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ticket-options" id="standard-ticket" value="15" checked>
+              Standard Ticket
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ticket-options" id="matinee-ticket" value="10" checked>
+              Matinee Ticket
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ticket-options" id="senior-ticket" value="7" checked>
+              Senior Ticket
+            </label>
+          </div>
+          <p>
+            Movie Times
+          </p>
+          <select class="form-control time-list">
+            <option value="12">12:00pm</option>
+            <option value="2">2:00pm</option>
+            <option value="4">4:00pm</option>
+            <option value="6">6:00pm</option>
+            <option value="8">8:00pm</option>
+            <option value="10">10:00pm</option>
+          </select>
+          <p>
+            Movie Dates:
+          </p>
+          <select class="form-control date-list">
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thur">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+            <option value="sun">Sundays</option>
+          </select>
+          <button type="submit" class="btn">Buy Ticket!</button>
+        </form>
+      </div>
+    </div>
+    <div class="ticket-output">
+      <ul id="#ticket-out">
+
+      </ul>
+    </div>
+  </div>
+  </body>
+</html>
